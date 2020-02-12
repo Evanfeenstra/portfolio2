@@ -17,11 +17,13 @@ header {
   margin:0 auto;
   max-width:100vw;
   max-height:141vw;
-  -webkit-box-shadow: 3px 4px 24px -4px rgba(117,117,117,1);
--moz-box-shadow: 3px 4px 24px -4px rgba(117,117,117,1);
-box-shadow: 3px 4px 24px -4px rgba(117,117,117,1);
+  box-shadow: 3px 4px 24px -4px rgba(117,117,117,1);
 }
 
+.resume-link{
+  display: flex;
+  justify-content: center;
+}
 
 
 

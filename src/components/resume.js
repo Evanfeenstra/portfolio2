@@ -1,23 +1,28 @@
 import React, { Component } from 'react';
 import resumeData from '../resumeData';
-import { pdfjs, Document, Page } from 'react-pdf';
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+// import { pdfjs, Document, Page } from 'react-pdf';
+// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 export default class Resume extends Component {
-
-
 
   render() {
     return (
       <section id="resume">
 
-        <Document
+        {/* <Document
           file="Feenstra-Resume.pdf"
         >
           <Page pageNumber={1} />
         </Document>
 
-        {/* <div className="row education">
+        <div className="resume-link">
+          <a href="Feenstra-Resume.pdf" target="_blank">
+            <button>View PDF File</button>
+          </a>
+        </div> */}
+        
+
+        <div className="row education">
 
           <div className="three columns header-col">
             <h1><span>Education</span></h1>
@@ -107,7 +112,7 @@ export default class Resume extends Component {
 
           </div>
 
-        </div> */}
+        </div>
 
       </section>
     );
